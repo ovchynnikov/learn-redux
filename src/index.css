@@ -1,13 +1,48 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+div button {
+    margin-right: 10px;
+    border-radius: 4px;
+    padding: 10px
+}
+
+i {
+    font-size: 110%;
+}
+
+.App {
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+}
+
+.redButton {
+    transition-duration: 0.4s;
+    border: 2px solid #ee0606;
+}
+
+.redButton:hover {
+    background-color: #ee0606;
+    /* Red */
+    color: white;
+}
+
+.greenButton {
+    transition-duration: 0.4s;
+    border: 2px solid #4CAF50;
+}
+
+.greenButton:hover {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
 }

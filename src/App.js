@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useSelector, useDispatch } from 'react-redux';
+import { increment, decrement, reset, million } from './actions';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    const counter = useSelector(state => state.counter);
+    const isLogged = useSelector(state => state.isLogged)
+    const dispatch = useDispatch();
+    
+    const randomNum = (function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+      });
+      
 
+    return ( 
+    <div className = "App">
+        <h1>This app was made using <i>React with Redux</i> states to <i>increment</i> action of random number from 0 to 5 on "+" button
+             and <i>decrement</i> -1 on "-" button</h1>
+        <h1> Counter {counter}</h1> 
+        <button className= "greenButton" onClick={() => dispatch(increment(randomNum(5)))}>+</button>
+        <button className= "redButton" onClick={() => dispatch(decrement())}>-</button>
+        <button className= "redButton" onClick={() => dispatch(reset())}>Reset to 0</button>
+        <button className= "greenButton" onClick={() => dispatch(million())}>set to 1 million</button>
+        {isLogged ? <h3>Secret information only for logged in users</h3> : ''}
+    </div>
+    );
+}
 export default App;
