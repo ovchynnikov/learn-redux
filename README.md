@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -7,10 +8,19 @@ In the project directory, you can run:
 
 ### `yarn start`
 
+=======
+This project was created with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+In the project directory, you can run:
+
+### `npm start`
+>>>>>>> 6a69516f0685fd3f5077920d6c77e4d0ed7536c6
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
+<<<<<<< HEAD
 You will also see any lint errors in the console.
 
 ### `yarn test`
@@ -68,6 +78,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 =======
+=======
+
+>>>>>>> 6a69516f0685fd3f5077920d6c77e4d0ed7536c6
 # learn-redux
 React + Redux states counter
 >>>>>>> 8529dd76b3638eebb1700dd93367fa25b3a80da0
