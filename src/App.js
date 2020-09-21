@@ -5,11 +5,7 @@ import { increment, decrement, reset, million } from './actions';
 
 function App() {
     const counter = useSelector(state => state.counter);
-<<<<<<< HEAD
     const isLogged = useSelector(state => state.isLogged);
-=======
-    const isLogged = useSelector(state => state.isLogged)
->>>>>>> 6a69516f0685fd3f5077920d6c77e4d0ed7536c6
     const dispatch = useDispatch();
     
     const randomNum = (function getRandomInt(max) {
